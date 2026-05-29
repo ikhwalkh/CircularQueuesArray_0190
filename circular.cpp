@@ -1,3 +1,4 @@
+//membuat file program queue C++
 #include <iostream>
 using namespace std;
 
