@@ -34,6 +34,7 @@ public:
             return;
         }
 
+        //menambahkan logika circular queue pada insert
         // cek apakah antrian kosong
         if (FRONT == -1)
         {
