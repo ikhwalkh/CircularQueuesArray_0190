@@ -137,7 +137,7 @@ public:
 int main()
 {
     Queues q;
-    char ch;
+    char ch; //menambahkan menu pilihan pada main()
 
     while (true)
     {
