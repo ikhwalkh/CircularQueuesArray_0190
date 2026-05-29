@@ -18,6 +18,7 @@ public:
         REAR = -1;
     }
 
+    //membuat fungsi insert() pada queue
     void insert()
     {
         int num;
