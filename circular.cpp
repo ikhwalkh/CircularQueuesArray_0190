@@ -98,6 +98,7 @@ public:
 
         cout << "\nElements in the queue are...\n";
 
+        //Menambahkan logika display circular queue
         // jika FRONT < REAR, iterasi dari FRONT hingga REAR
         if (FRONT_Position <= REAR_Position)
         {
