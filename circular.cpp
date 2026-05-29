@@ -53,6 +53,7 @@ public:
         queue_array[REAR] = num;
     }
 
+    //membuat fungsi remove() pada queue
     void remove()
     {
         // cek apakah antrian kosong
