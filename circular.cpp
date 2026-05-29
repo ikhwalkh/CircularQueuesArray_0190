@@ -10,6 +10,7 @@ private:
     int FRONT, REAR;
     int queue_array[max];
 
+//menambahkan constructor default pada class Queues
 public:
     Queues()
     {
