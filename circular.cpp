@@ -83,6 +83,7 @@ public:
         }
     }
 
+    //Membuat fungsi display() untuk queue
     void display()
     {
         int FRONT_Position = FRONT;
