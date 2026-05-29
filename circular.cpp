@@ -126,6 +126,7 @@ public:
     }
 };
 
+//menambahkan object queue di main()
 int main()
 {
     Queues q;
