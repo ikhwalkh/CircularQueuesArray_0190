@@ -2,6 +2,7 @@
 #include <iostream>
 using namespace std;
 
+// menambahkan class Queues dan deklarasi atribut
 class Queues
 {
 private:
