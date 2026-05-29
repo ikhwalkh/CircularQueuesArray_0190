@@ -152,7 +152,7 @@ int main()
             cin >> ch;
             cout << endl;
 
-            switch (ch)
+            switch (ch) //menambahkan switch untuk operasi queue
             {
             case '1':
             {
