@@ -65,7 +65,8 @@ public:
         //menambahkan output elemen yang dihapus
         cout << "\nThe element deleted from the queue is: "
              << queue_array[FRONT] << "\n";
-
+      
+        //Menambahkan logika circular queue pada remove
         // cek jika antrian hanya memiliki satu elemen
         if (FRONT == REAR)
         {
