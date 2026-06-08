@@ -31,13 +31,13 @@
  * 
  */
 
+
 //membuat file program queue C++
 #include <iostream>
 using namespace std;
 /**
  * @class Queues
  * @brief class ini untuk operasi lengkap queues
- * 
  * 
  */
 
