@@ -1,6 +1,46 @@
+/**
+ * @mainpage Documentation Circular Queues
+ * 
+ * @section Introduction
+ * Project ini merupakan project structur data
+ * menggunakan structur data queues dengan pendekatan circular arrays.
+ * 
+ * @section Operations
+ * Project ini memiliki beberapa operasi antara lain:
+ * 1. Insert
+ * 2. Delete
+ * 3. Display
+ * 
+ * @section Cara penggunaan 
+ * Berikut beberapa menu yang bisa digunakan:
+ * 1. en queue
+ * 2. de queue
+ * 3. display
+ * 4. exit
+ * 
+ * @author Profil
+ * - nama : ikhwal islami pasya
+ * - nim  : 20250140190
+ * - kelas : D
+ * 
+ * @brief
+ * @version 0.1
+ * @date 2026-06-08
+ * 
+ * @copyright ikhwal.islami.ft25@mail.umy.ac.id (c) 2026 
+ * 
+ */
+
 //membuat file program queue C++
 #include <iostream>
 using namespace std;
+/**
+ * @class Queues
+ * @brief class ini untuk operasi lengkap queues
+ * 
+ * 
+ */
+
 
 // menambahkan class Queues dan deklarasi atribut
 class Queues
@@ -12,16 +52,25 @@ private:
 
 //menambahkan constructor default pada class Queues
 public:
+    /**
+     * @brief Construct a new Queues object
+     * set default queues null
+     * with front = -1 and rear = -1
+     */
     Queues()
     {
         FRONT = -1;
         REAR = -1;
     }
+    /**
+     * @brief method untuk memasukkan data dalam antrian
+     * data dimasukkan dalam variable queue_array
+     */
 
     //membuat fungsi insert() pada queue
     void insert()
     {
-        int num;
+        int num;////< variable num untuk menyimpan nilai
         cout << "Enter a number: ";
         cin >> num;
         cout << endl;
@@ -53,6 +102,11 @@ public:
         queue_array[REAR] = num;
     }
 
+    /**
+     * @brief method untuk menghapus data dalam antrian
+     * data dihapuskan dari dalam variable queue_array
+     */
+
     //membuat fungsi remove() pada queue
     void remove()
     {
@@ -82,12 +136,16 @@ public:
                 FRONT = FRONT + 1;
         }
     }
+    /**
+     * @brief method untuk menampilkan data dalam antrian
+     * data ditampilkan yang berada dalam variable queue_array
+     */
 
     //Membuat fungsi display() untuk queue
     void display()
     {
-        int FRONT_Position = FRONT;
-        int REAR_Position = REAR;
+        int FRONT_Position = FRONT; /////< variable front_position untuk menandakan posisi element pertama pada variable front
+        int REAR_Position = REAR;///////< variable rear_position untuk menandakan posisi element terakhir pada variable rear
 
         // cek apakah antrian kosong
         if (FRONT_Position == -1)
@@ -112,7 +170,7 @@ public:
         }
         else
         {
-            // jika FRONT > REAR, iterasi dari FRONT hingga akhir array
+            // jika FRONT_position > REAR_position, literasi dari FRONT hingga akhir array
             while (FRONT_Position <= max - 1)
             {
                 cout << queue_array[FRONT_Position] << " ";
@@ -121,7 +179,7 @@ public:
 
             FRONT_Position = 0;
 
-            // iterasi dari awal array hingga REAR
+            // literasi dari awal array hingga REAR
             while (FRONT_Position <= REAR_Position)
             {
                 cout << queue_array[FRONT_Position] << " ";
@@ -132,12 +190,15 @@ public:
         }
     }
 };
+/**
+ * @brief method utama untuk menjalankan program
+ */
 
 //menambahkan object queue di main()
 int main()
 {
-    Queues q;
-    char ch; //menambahkan menu pilihan pada main()
+    Queues q;////< objek untuk menggunakan member yang ada pada class queues
+    char ch; /////< variable ch untuk menyimpan pilihan pada menu yang diberikan
 
     while (true)
     {
